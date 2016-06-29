@@ -72,6 +72,7 @@ h4 {
 
 #header img {
   padding-top: 1.375em;
+  padding-left: 1.375em;
 }
 
 menu {
@@ -255,7 +256,7 @@ menu li a:hover {
 #about .layout a {
   display: block;
   text-align: center;
-  width: 24.7%;
+  width: 150px;
   text-transform: uppercase;
   background: #e7ad48;
   font: 1em sans-serif;
@@ -556,7 +557,7 @@ menu li a:hover {
   background-repeat: no-repeat;
   margin-top: 3.125em;
   padding-bottom: 3.4em;
-  border-bottom:
+  background-size: contain;
 }
 
 #contacts .contacts_circle {
@@ -688,4 +689,474 @@ footer .copyright p {
 
 footer .layout:last-child {
   width: 100%;
+}
+
+
+/*  -------------   Adaptive -----------  */
+
+
+/*    ------  1280px   -----  */
+
+@media screen and (max-width:1280px), only screen and (max-device-width:1280px) {
+  .layout {
+    width:100%;
+  }
+
+  #header .requestForm {
+    width: 84.375%;
+  }
+}
+
+/*    ---- 1024px   ---- */
+
+@media screen and (max-width:1024px), only screen and (max-device-width:1024px) {
+  .layout {
+    width: 980px;
+  }
+
+  #header menu {
+    width: 83%;
+  }
+
+  #header .requestForm {
+    width: 93%;
+  }
+
+  #header .inputBox input, #contacts .inputBox input {
+    width: 200px;
+  }
+
+  #header input.button, #contacts input.button {
+    width: 160px;
+  }
+
+  #header .inputBox, #contacts .inputBox {
+    width: 240px;
+  }
+
+  #clients .box2 {
+    height: 185px;
+  }
+
+  footer menu {
+    width: 83%;
+  }
+}
+
+/*    ----- 854px   --------- */
+
+@media screen and (max-width:854px), only screen and (max-device-width:854px) {
+  .layout {
+    width: 810px;
+  }
+
+  #header menu {
+    margin-top: 0;
+    width: 70%;
+  }
+
+  #header menu li {
+    margin-top: 1.5em;
+  }
+
+  #header .inputBox.last {
+    float: none;
+    overflow: hidden;
+  }
+
+  #header .requestForm {
+    text-align: center;
+  }
+
+  #header .requestForm input.button {
+    margin-top: 1.5em;
+  }
+
+  #about .layout>img {
+    right: 60%;
+  }
+
+  #about .layout div {
+    width: 60%;
+  }
+
+  #services .box2 {
+    float: none;
+    width: 80%;
+    margin: 0 auto 5em auto;
+  }
+
+  #services .box2 h4, #services .box2 p {
+    margin-right: 0;
+  }
+
+  #services .last_box2 {
+    margin-bottom: 5em !important;
+  }
+
+  #about h2 {
+    padding-top: 3em;
+  }
+
+  #clients .box2 {
+    width: 80%;
+    margin: 0 auto 1.25em auto;
+  }
+
+  #clients .box2:nth-child(odd), #clients .box2:nth-child(even) {
+    float: none;
+  }
+
+  #contacts .inputBox.last {
+    float: none;
+    overflow: hidden;
+  }
+
+  #contacts div.requestForm {
+    text-align: center;
+    width: 60%;
+  }
+
+  #contacts .inputBox {
+    width: 240px;
+  }
+
+  #contacts .inputBox input {
+    width: 200px;
+  }
+
+  #contacts .requestForm input.button {
+    margin-top: 1.5em;
+  }
+
+  footer menu {
+    margin-top: 0;
+    width: 70%;
+  }
+
+  footer menu li {
+    margin-top: 1.5em;
+  }
+
+  #work .box4 p {
+    margin-bottom: 3.5em;
+  }
+
+  #contacts .contacts_map {
+    height: 26em;
+  }
+}
+
+/*    ----- 800px   --------- */
+
+@media screen and (max-width:800px), only screen and (max-device-width:800px) {
+  .layout {
+    width: 760px;
+  }
+
+  #header .requestForm .inputBox, #contacts .requestForm .inputBox {
+    float: none;
+    margin: 0 auto 1em auto;
+    width: 280px;
+  }
+
+  #header .requestForm .inputBox input,
+  #contacts .requestForm .inputBox input {
+    width: 240px;
+  }
+
+  #services {
+    padding-bottom: 5em;
+  }
+
+  #about {
+    padding-bottom: 6.5em;
+  }
+
+  #price .box3 h2 {
+    font-size: 1.8em;
+  }
+
+}
+
+/*    ----- 768px   --------- */
+
+@media screen and (max-width:768px), only screen and (max-device-width:768px) {
+  .layout {
+    width: 720px;
+  }
+
+  #work, #price, #clients {
+    padding-bottom: 7.5em;
+  }
+
+  #clients h2, #work h2, #header h2, #services h2, #about h2,
+  #contacts h2 {
+    padding-top: 2.5em;
+  }
+
+  footer menu {
+    width: 80%;
+  }
+}
+
+/*    ----- 640px   --------- */
+
+@media screen and (max-width:640px), only screen and (max-device-width:640px) {
+  .layout {
+    width: 600px;
+  }
+
+  #slider {
+    margin-top: -16.4em;
+  }
+
+  #slider>img {
+    width: 80%;
+  }
+
+  #about h2 {
+    padding-top: 1.5em;
+  }
+
+  #about p {
+    margin: 0.5em 0 2.18em 13.6%;
+  }
+
+  #about {
+    padding-bottom: 3.5em;
+  }
+
+  #about .layout>img {
+    right: 70%;
+  }
+
+  #about .layout>div {
+    width: 70%;
+  }
+
+  #price .box3 h2 {
+    font-size: 1.4em;
+  }
+
+  #work .step {
+    float: none;
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #work .step h4 {
+    padding: 1.1em 0 0.5em 0;
+  }
+
+  #work .step p {
+    margin-bottom: 1.7em;
+  }
+
+  #clients .box2 {
+    width: 90%;
+    height: 150px;
+  }
+
+  #clients .client_rank {
+    margin-right: 5%;
+  }
+
+  footer menu {
+    width: 90%;
+  }
+}
+
+/*    ----- 600px   --------- */
+
+@media screen and (max-width:600px), only screen and (max-device-width:600px) {
+  .layout {
+    width: 560px;
+  }
+
+  #header menu {
+    width: 80%;
+  }
+
+  #services, #about, #price, #work, #clients {
+    padding-bottom: 2.3em;
+  }
+
+  #about h2 {
+    padding-top: 0.8em;
+  }
+
+  #price h2 {
+    padding-top: 2.7em;
+  }
+
+  footer menu {
+    width: 100%;
+  }
+}
+
+/*    ----- 480px   --------- */
+
+@media screen and (max-width:480px), only screen and (max-device-width:480px) {
+  .layout {
+    width: 440px;
+  }
+
+  #header menu {
+    width: 70%;
+  }
+
+  #header img {
+    padding-top: 3.375em;
+  }
+
+  #header .headerMiddle {
+    padding-bottom: 15em;
+  }
+
+  #slider a>img {
+    padding-top: 1.8em;
+  }
+
+  #price .box3 h2 {
+    font-size: 1.1em;
+  }
+
+  #header h2, #services h2, #price h2, #price h2, #clients h2,
+  #contacts h2 {
+    padding-top: 1.8em;
+  }
+
+  #clients .box2 img {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #clients .box2 p {
+    text-align: center;
+    margin: 0.7em auto 0 auto;
+    width: 95%;
+  }
+
+  #clients .box2 {
+    height: auto;
+  }
+
+  .client_name {
+    margin-left: 5%;
+  }
+
+  .price_digit {
+    font: 3em sans-serif;
+    margin-bottom: 0.21em;
+  }
+
+  #slider, #about .layout> img {
+    display: none;
+  }
+
+  #about .layout>div {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  #about h2, #about p, #about a {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  #header .headerMiddle {
+    padding-bottom: 3em;
+  }
+
+  #services .box2>img {
+    float: none;
+    padding: 0 0 0.3em 0;
+  }
+}
+
+
+/*    ----- 360px   --------- */
+
+@media screen and (max-width:360px), only screen and (max-device-width:360px) {
+  .layout {
+    width: 320px;
+  }
+
+  #header menu {
+    float: none;
+    width: 100%;
+  }
+
+  #header .layout>img {
+    padding-top: 1.375em;
+  }
+
+  .menu_last {
+    margin-bottom: 1.5em;
+  }
+
+  #header menu li, footer menu li {
+    margin-right: 1em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  #header .inner {
+    overflow: visible;
+  }
+
+  #services .headline, #price .headline, #work .headline,
+  #clients .headline {
+    padding-bottom: 3.5em;
+  }
+
+  #services .box2 {
+    width: 95%;
+    margin-bottom: 3em;
+  }
+
+  #price .box3 {
+    float: none;
+    width: 85%;
+    margin: 0 auto;
+    padding: 1em 0;
+  }
+
+  #price .layout .premium a {
+    margin-bottom: 1.8em;
+  }
+}
+
+/*    ----- 320px   --------- */
+
+@media screen and (max-width:320px), only screen and (max-device-width:320px) {
+  .layout {
+    width: 280px;
+  }
+
+  #header menu li, footer menu li {
+    margin-right: 0em;
+  }
+
+  #services .last_box2 {
+    margin-bottom: 3em !important;
+  }
+
+  #clients .box2 {
+    padding: 1.875em 0 1.5em 0;
+  }
+
+  #contacts .contacts_circle {
+    width: 240px;
+    height: 240px;
+  }
+
+  #contacts .contacts_circle h4 {
+    padding: 2.06em 0 1.25em 0;
+  }
 }

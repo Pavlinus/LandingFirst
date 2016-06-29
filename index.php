@@ -22,13 +22,13 @@
         <li><a href="#">About Us</a></li>
         <li><a href="#">Pricing Table</a></li>
         <li><a href="#">How It Work</a></li>
-        <li><a href="#">Happy Clients</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li class="menu_last"><a href="#">Happy Clients</a></li>
+        <li class="menu_last"><a href="#">Contact Us</a></li>
       </menu>
       <div class="clr"></div>
     </div>
 
-    <div class="layout">
+    <div class="layout inner">
       <div class="headerMiddle">
         <h2>Boost up your local business</h2>
         <span class="headline">Some text goes here</span>
@@ -45,7 +45,7 @@
                 <img src="images/email_icon.png"/>
                 <input type="email" name="formEmail" placeholder="Email Address"/>
               </div>
-              <div class="inputBox">
+              <div class="inputBox last">
                 <img src="images/phone_icon.png"/>
                 <input type="phone" name="formPhone" placeholder="Phone Number"/>
               </div>
@@ -228,19 +228,19 @@
         <img src="images/double_arrow_g_rotate.png"/>
       </div>
 
-      <div class="box4">
+      <div class="box4 step">
         <h4>Step 1</h4>
         <p>Step 1 description</p>
       </div>
-      <div class="box4">
+      <div class="box4 step">
         <h4>Step 2</h4>
         <p>Step 2 description</p>
       </div>
-      <div class="box4">
+      <div class="box4 step">
         <h4>Step 3</h4>
         <p>Step 3 description</p>
       </div>
-      <div class="box4">
+      <div class="box4 step">
         <h4>Step 4</h4>
         <p>Step 4 description</p>
       </div>
@@ -261,8 +261,10 @@
             <p>Client's response Client's response Client's response
             Client's response Client's response</p>
             <span class="response_quots">&#8222;</span>
-            <span class="client_name">Darwin Michel,</span>
-            <span class="client_rank">Project manager</span>
+            <div>
+              <span class="client_name">Darwin Michel,</span>
+              <span class="client_rank">Project manager</span>
+            </div>
           </div>
         </div>
         <div class="box2">
@@ -271,8 +273,10 @@
             <p>Client's response Client's response Client's response
             Client's response Client's response Client's</p>
             <span class="response_quots">&#8222;</span>
-            <span class="client_name">Adam Sabath,</span>
-            <span class="client_rank">Creative director</span>
+            <div>
+              <span class="client_name">Adam Sabath,</span>
+              <span class="client_rank">Creative director</span>
+            </div>
           </div>
         </div>
       </div>
@@ -283,8 +287,10 @@
           <p>Client's response Client's response Client's response
           Client's response Client's response Client's</p>
           <span class="response_quots">&#8222;</span>
-          <span class="client_name">Bob Carter,</span>
-          <span class="client_rank">Lipsum Director</span>
+          <div>
+            <span class="client_name">Bob Carter,</span>
+            <span class="client_rank">Lipsum Director</span>
+          </div>
         </div>
       </div>
       <div class="box2">
@@ -293,8 +299,10 @@
           <p>Client's response Client's response Client's response
           Client's response Client's response Client's</p>
           <span class="response_quots">&#8222;</span>
-          <span class="client_name">Zack Stark,</span>
-          <span class="client_rank">Manager</span>
+          <div>
+            <span class="client_name">Zack Stark,</span>
+            <span class="client_rank">Manager</span>
+          </div>
         </div>
       </div>
     </div>
@@ -312,7 +320,7 @@
             <img src="images/name_icon.png"/>
             <input type="name" name="formName" placeholder="Full Name"/>
           </div>
-          <div class="inputBox">
+          <div class="inputBox last">
             <img src="images/email_icon.png"/>
             <input type="email" name="formEmail" placeholder="Email Address"/>
           </div>
