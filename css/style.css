@@ -82,7 +82,7 @@ menu {
 }
 
 menu li {
-  float: left;
+  display: inline-block;
   text-transform: uppercase;
 }
 
@@ -169,7 +169,7 @@ menu li a:hover {
 #slider>img {
   display: block;
   padding: 0;
-  margin: 0 auto;
+  margin: -10px auto 0 auto;
 }
 
 #slider a img {
@@ -213,6 +213,7 @@ menu li a:hover {
   float: left;
   overflow: hidden;
   margin-bottom: 5em;
+  transition: all 0.5s linear;
 }
 
 .box2>div {
@@ -251,6 +252,8 @@ menu li a:hover {
   top: -0.625em;
   overflow: visible;
   z-index: -1;
+  height: 110%;
+  max-height: 714px;
 }
 
 #about .layout a {
@@ -270,13 +273,18 @@ menu li a:hover {
   background: #e7bd48;
 }
 
+#read {
+
+}
+
 #price {
   background: #e7edf3;
+  padding-top: 4.5em;
   padding-bottom: 10.31em;
 }
 
 #price h2 {
-  padding-top: 4.11em;
+  padding-top: 2.11em;
   color: #394b50;
 }
 
@@ -290,6 +298,7 @@ menu li a:hover {
   width: 32.9%;
   background: #fff;
   text-align: center;
+  transition: all 0.2s linear;
 }
 
 #price .box3 h2 {
@@ -423,9 +432,10 @@ menu li a:hover {
 
 #work h4 {
   font: 1.125em sans-serif;
-  color: #394b50;
   padding: 3.3em 0 1.6em;
   font-weight: bold;
+  color: #394b50;
+  transition: all 0.4s linear;
 }
 
 #work p {
@@ -449,6 +459,14 @@ menu li a:hover {
 
 #work .layout a:hover {
   background: #e7bd48;
+}
+
+.notActive {
+  color: #394b50 !important;
+}
+
+.active {
+  color: #ffbb42 !important;
 }
 
 #clients {
@@ -603,6 +621,7 @@ footer menu {
   text-align: center;
   float: none;
   margin: 4em auto 1.87em auto;
+  width: 100%;
 }
 
 .contact_number {
@@ -845,6 +864,10 @@ footer .layout:last-child {
   #contacts .contacts_map {
     height: 26em;
   }
+
+  #price .box3 h2 {
+    font-size: 1.9em;
+  }
 }
 
 /*    ----- 800px   --------- */
@@ -909,10 +932,6 @@ footer .layout:last-child {
 
   #slider {
     margin-top: -16.4em;
-  }
-
-  #slider>img {
-    width: 80%;
   }
 
   #about h2 {
@@ -1099,11 +1118,11 @@ footer .layout:last-child {
   }
 
   #header menu li, footer menu li {
-    margin-right: 1em;
+    margin-right: 0.2em;
   }
 
   h2 {
-    font-size: 1.8em;
+    font-size: 1.6em;
   }
 
   #header .inner {
@@ -1158,5 +1177,13 @@ footer .layout:last-child {
 
   #contacts .contacts_circle h4 {
     padding: 2.06em 0 1.25em 0;
+  }
+
+  .menu_last {
+    margin-bottom: 0em;
+  }
+
+  #header .headerMiddle h2 {
+    font-size: 1.3em;
   }
 }

@@ -11,27 +11,34 @@
 <!--[if IE]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+<script
+  src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" defer>
+</script>
+<script src="scripts/effects.js" defer></script>
+<script src="scripts/jquery-animate-css-rotate-scale.js" defer></script>
+<script src="scripts/jquery-css-transform.js" defer></script>
+<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js" defer></script>
 </head>
 <body id="page">
   <section id="header">
     <div class="layout">
       <img src="images/logo.png"/>
       <menu>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Service</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Pricing Table</a></li>
-        <li><a href="#">How It Work</a></li>
-        <li class="menu_last"><a href="#">Happy Clients</a></li>
-        <li class="menu_last"><a href="#">Contact Us</a></li>
+        <li><a href="#main">Главная</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#about">Об авторе</a></li>
+        <li><a href="#price_item">Цены</a></li>
+        <li><a href="#work">Схема работы</a></li>
+        <li class="menu_last"><a href="#clients">Отзывы</a></li>
+        <li class="menu_last"><a href="#contacts">Контакты</a></li>
       </menu>
       <div class="clr"></div>
     </div>
 
     <div class="layout inner">
       <div class="headerMiddle">
-        <h2>Boost up your local business</h2>
-        <span class="headline">Some text goes here</span>
+        <h2 id="main">Получи больше от своего бизнеса</h2>
+        <span class="headline">Повышение уровня дохода за несколько кадров</span>
 
         <div class="layout">
           <!-- Форма регистрации -->
@@ -39,17 +46,17 @@
             <form>
               <div class="inputBox">
                 <img src="images/name_icon.png"/>
-                <input type="name" name="formName" placeholder="Full Name"/>
+                <input type="name" name="formName" placeholder="Ваше имя"/>
               </div>
               <div class="inputBox">
                 <img src="images/email_icon.png"/>
-                <input type="email" name="formEmail" placeholder="Email Address"/>
+                <input type="email" name="formEmail" placeholder="Email адрес"/>
               </div>
               <div class="inputBox last">
                 <img src="images/phone_icon.png"/>
-                <input type="phone" name="formPhone" placeholder="Phone Number"/>
+                <input type="phone" name="formPhone" placeholder="Номер телефона"/>
               </div>
-              <input type="submit" value="Request a quote" class="button"/>
+              <input type="submit" value="Оставить заявку" class="button"/>
             </form>
             <div class="clr"></div>
           </div>
@@ -57,150 +64,131 @@
       </div>
 
       <div id="slider">
+        <iframe width="450" height="280"
+          src="https://www.youtube.com/embed/EH-E86qLmnM" frameborder="0">
+        </iframe>
         <img src="images/laptop.png"/>
-        <a href="#" id="slide1"><img src="images/dot.png"/></a>
+        <!--a href="#" id="slide1"><img src="images/dot.png"/></a>
         <a href="#" id="slide2"><img src="images/dot.png"/></a>
-        <a href="#" id="slide3"><img src="images/dot.png"/></a>
+        <a href="#" id="slide3"><img src="images/dot.png"/></a-->
       </div>
     </div>
   </section>
 
   <section id="services">
     <div class="layout">
-      <h2>Our services</h2>
-      <span class="headline">Headline text</span>
+      <h2>Услуги</h2>
+      <span class="headline">Что может помочь именно Вам</span>
 
-      <div class="box2">
+      <div class="box2 left">
         <img src="images/font_icons.png"/>
         <div>
-          <h4>Font-Awesome Icons</h4>
-          <p>Some text goes here Some text goes here Some text goes here
-          Some text goes here Some text goes here Some text goes here</p>
+          <h4>Экономим Ваше время</h4>
+          <p>На создание уникального ролика затрачивается не более 24 часов</p>
         </div>
       </div>
-      <div class="box2">
+      <div class="box2 right">
         <img src="images/responsive_design.png"/>
         <div>
-          <h4>Fully responsive Design</h4>
-          <p>Some text goes here Some text goes here Some text goes here
-          Some text goes here Some text goes here Some text goes here</p>
+          <h4>Техническая помощь</h4>
+          <p>Помогаем разобраться с техническими сложностями в сфере
+            видеомонтажа</p>
         </div>
       </div>
 
-      <div class="box2">
+      <div class="box2 last_box2 left">
         <img src="images/working_form.png"/>
         <div>
-          <h4>Working Contract Form</h4>
-          <p>Some text goes here Some text goes here Some text goes here
-          Some text goes here Some text goes here Some text goes here</p>
+          <h4>Экспресс курсы</h4>
+          <p>Проводим удаленное обучение по популярным программам для
+          работы с видео</p>
         </div>
       </div>
-      <div class="box2">
+      <div class="box2 last_box2 right">
         <img src="images/retina.png"/>
         <div>
-          <h4>Retina ready icons here</h4>
-          <p>Some text goes here Some text goes here Some text goes here
-          Some text goes here Some text goes here Some text goes here</p>
+          <h4>Продвигаем Ваш бизнес</h4>
+          <p>Самыми популярными средствами рекламы стали именно видео ролики.
+          Мы готовы Вам в этом помочь.</p>
         </div>
       </div>
-
-      <div class="box2 last_box2">
-        <img src="images/friendly_code.png"/>
-        <div>
-          <h4>Friendly code</h4>
-          <p>Some text goes here Some text goes here Some text goes here
-            Some text goes here Some text goes here Some text goes here</p>
-        </div>
-      </div>
-      <div class="box2 last_box2">
-        <img src="images/flat_design.png"/>
-        <div>
-          <h4>Flat Trendy landing page design</h4>
-          <p>Some text goes here Some text goes here Some text goes here
-            Some text goes here Some text goes here Some text goes here</p>
-        </div>
-      </div>
+      <div id="tmp"></div>
     </div>
   </section>
 
   <section id="about">
     <div class="layout">
-      <img src="images/about_us.jpg"/>
+      <img src="images/about_us.jpg" id="about_img"/>
       <div>
-        <h2>About us</h2>
-        <p>Some text goes here Some text goes here Some text goes here
-          Some text goes here Some text goes here Some text goes here
-          Some text goes here Some text goes here Some text goes here
-            Some text goes here Some text goes here Some text goes here
-            Some text goes here Some text goes here Some text goes here
-              Some text goes here Some text goes here Some text goes here</p>
-        <a href="#">Read more</a>
+        <h2>Об авторе</h2>
+        <p>Откровенный рассказ о себе и своих навыках...</p>
+        <a href="#" id="read">Читать</a>
     </div>
     </div>
   </section>
 
   <section id="price">
     <div class="layout">
-      <h2>Choose your price</h2>
-      <span class="headline">Headline text</span>
+      <h2 id="price_item">Цены</h2>
+      <span class="headline">Оптимальные предложения</span>
 
       <div class="box3">
-        <h2>Basic plan</h2>
+        <h2>Тех. помощь</h2>
         <span class="price_sign">&#36;</span>
         <span class="price_digit">22</span>
-        <p class="price_details">Per month</p>
+        <p class="price_details">За консультацию</p>
         <div class="plan_option">
-          <p>1 Account</p>
+          <p>Ответ в течение часа</p>
         </div>
         <div class="plan_option">
-          <p>8 Hour Support</p>
+          <p>Скидка на услуги</p>
         </div>
         <div class="plan_option">
-          <p>Custom cloud services</p>
+          <p>Бонусы</p>
         </div>
-        <a href="#">Get started</a>
+        <a href="#">Заказать</a>
       </div>
 
       <div class="box3 premium">
-        <h2>Premium plan</h2>
+        <h2>Видео ролик</h2>
         <span class="price_sign">&#36;</span>
         <span class="price_digit">42</span>
-        <p class="price_details">Per month</p>
+        <p class="price_details">За ролик</p>
         <div class="plan_option">
-          <p>2 Account</p>
+          <p>Одно исправление</p>
         </div>
         <div class="plan_option">
-          <p>100Mb storage</p>
+          <p>Бесплатная консультация</p>
         </div>
         <div class="plan_option">
-          <p>Custom cloud services</p>
+          <p>Платный диктор</p>
         </div>
-        <a href="#">Get started</a>
+        <a href="#">Заказать</a>
       </div>
 
       <div class="box3">
-        <h2>Gold plan</h2>
+        <h2>Анимация</h2>
         <span class="price_sign">&#36;</span>
         <span class="price_digit">62</span>
-        <p class="price_details">Per month</p>
+        <p class="price_details">За ролик</p>
         <div class="plan_option">
-          <p>8 Account</p>
+          <p>Три исправления</p>
         </div>
         <div class="plan_option">
-          <p>24 Hour Support</p>
+          <p>Сложные спец. эффекты</p>
         </div>
         <div class="plan_option">
-          <p>Custom cloud services</p>
+          <p>Диктор</p>
         </div>
-        <a href="#">Get started</a>
+        <a href="#">Заказать</a>
       </div>
     </div>
   </section>
 
   <section id="work">
     <div class="layout">
-      <h2>How it works</h2>
-      <span class="headline">Headline text</span>
+      <h2>Схема работы</h2>
+      <span class="headline">Алгоритм предоставления услуги</span>
 
       <div class="box2">
         <img src="images/double_arrow.png"/>
@@ -229,53 +217,53 @@
       </div>
 
       <div class="box4 step">
-        <h4>Step 1</h4>
-        <p>Step 1 description</p>
+        <h4 class="active">Шаг 1</h4>
+        <p>Консультация</p>
       </div>
       <div class="box4 step">
-        <h4>Step 2</h4>
-        <p>Step 2 description</p>
+        <h4 class="notActive">Шаг 2</h4>
+        <p>Первичная версия проекта</p>
       </div>
       <div class="box4 step">
-        <h4>Step 3</h4>
-        <p>Step 3 description</p>
+        <h4 class="notActive">Шаг 3</h4>
+        <p>Доработка продукта</p>
       </div>
       <div class="box4 step">
-        <h4>Step 4</h4>
-        <p>Step 4 description</p>
+        <h4 class="notActive">Шаг 4</h4>
+        <p>Ваш видео ролик</p>
       </div>
       <div class="clr"></div>
-      <a href="#">Get start now</a>
+      <a href="#">Начать работу</a>
     </div>
   </section>
 
   <section id="clients">
     <div class="layout">
-      <h2>Happy clients</h2>
-      <span class="headline">Headline text</span>
+      <h2>Наши клиенты</h2>
+      <span class="headline">Кому мы смогли помочь</span>
 
         <div>
         <div class="box2">
           <img src="images/client1.jpg"/>
           <div>
-            <p>Client's response Client's response Client's response
-            Client's response Client's response</p>
+            <p>Очень эмоциональный отзыв клиента, с метафорами и тщательным
+            подбором слов.</p>
             <span class="response_quots">&#8222;</span>
             <div>
-              <span class="client_name">Darwin Michel,</span>
-              <span class="client_rank">Project manager</span>
+              <span class="client_name">Клиент,</span>
+              <span class="client_rank">Должность</span>
             </div>
           </div>
         </div>
         <div class="box2">
           <img src="images/client2.jpg"/>
           <div>
-            <p>Client's response Client's response Client's response
-            Client's response Client's response Client's</p>
+            <p>Очень эмоциональный отзыв клиента, с метафорами и тщательным
+            подбором слов.</p>
             <span class="response_quots">&#8222;</span>
             <div>
-              <span class="client_name">Adam Sabath,</span>
-              <span class="client_rank">Creative director</span>
+              <span class="client_name">Клиент,</span>
+              <span class="client_rank">Должность</span>
             </div>
           </div>
         </div>
@@ -284,24 +272,24 @@
       <div class="box2">
         <img src="images/client3.jpg"/>
         <div>
-          <p>Client's response Client's response Client's response
-          Client's response Client's response Client's</p>
+          <p>Очень эмоциональный отзыв клиента, с метафорами и тщательным
+          подбором слов.</p>
           <span class="response_quots">&#8222;</span>
           <div>
-            <span class="client_name">Bob Carter,</span>
-            <span class="client_rank">Lipsum Director</span>
+            <span class="client_name">Клиент,</span>
+            <span class="client_rank">Должность</span>
           </div>
         </div>
       </div>
       <div class="box2">
         <img src="images/client4.jpg"/>
         <div>
-          <p>Client's response Client's response Client's response
-          Client's response Client's response Client's</p>
+          <p>Очень эмоциональный отзыв клиента, с метафорами и тщательным
+          подбором слов.</p>
           <span class="response_quots">&#8222;</span>
           <div>
-            <span class="client_name">Zack Stark,</span>
-            <span class="client_rank">Manager</span>
+            <span class="client_name">Клиент,</span>
+            <span class="client_rank">Должность</span>
           </div>
         </div>
       </div>
@@ -310,33 +298,33 @@
 
   <section id="contacts">
     <div class="layout">
-      <h2>Newsletter</h2>
-      <span class="headline">Headline text</span>
+      <h2>Будь на связи</h2>
+      <span class="headline">Подписан - молодец!</span>
 
       <!-- Форма подписки -->
       <div class="requestForm">
         <form>
           <div class="inputBox">
             <img src="images/name_icon.png"/>
-            <input type="name" name="formName" placeholder="Full Name"/>
+            <input type="name" name="formName" placeholder="Ваше имя"/>
           </div>
           <div class="inputBox last">
             <img src="images/email_icon.png"/>
-            <input type="email" name="formEmail" placeholder="Email Address"/>
+            <input type="email" name="formEmail" placeholder="Email адрес"/>
           </div>
-          <input type="submit" value="Subscribe now" class="button"/>
+          <input type="submit" value="Подписаться" class="button"/>
         </form>
       </div>
       <div class="clr"></div>
 
       <div class="contacts_map">
         <div class="contacts_circle">
-          <h4>Address</h4>
-          <p>Business street</p>
-          <p>Second north section</p>
-          <p>Bavani nagar. 88769</p>
-          <p>Call : +987-9976-999</p>
-          <span class="email_contact">info@businessface.com</span>
+          <h4>Адрес</h4>
+          <p>Направо вниз,</p>
+          <p>По коридору,</p>
+          <p>Там по лестнице спустись</p>
+          <p>На тазу по ней промчись</p>
+          <span class="email_contact">info@busines.com</span>
         </div>
         <img src="images/logo.png"/>
       </div>
@@ -346,13 +334,13 @@
   <footer>
     <div class="layout">
       <menu>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Service</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Pricing Table</a></li>
-        <li><a href="#">How It Work</a></li>
-        <li><a href="#">Happy Clients</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="#main">Главная</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#about">Об авторе</a></li>
+        <li><a href="#price_item">Цены</a></li>
+        <li><a href="#work">Схема работы</a></li>
+        <li><a href="#clients">Отзывы</a></li>
+        <li><a href="#contacts">Контакты</a></li>
       </menu>
       <div class="clr"></div>
 
