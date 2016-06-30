@@ -30,7 +30,7 @@ $(document).ready(function() {
   );
 
 
-  //scrollWhenReady();
+  scrollWhenReady();
   hideElements();
   startStepsAnimation();
 
@@ -117,7 +117,7 @@ $(document).ready(function() {
     stepsInterval = setInterval(function() {
         animateSteps()
       },
-      3000
+      2000
     );
   }
 

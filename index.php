@@ -15,6 +15,7 @@
   src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" defer>
 </script>
 <script src="scripts/effects.js" defer></script>
+<script src="scripts/validation.js" defer></script>
 <script src="scripts/jquery-animate-css-rotate-scale.js" defer></script>
 <script src="scripts/jquery-css-transform.js" defer></script>
 <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js" defer></script>
@@ -43,18 +44,22 @@
         <div class="layout">
           <!-- Форма регистрации -->
           <div class="requestForm">
-            <form>
-              <div class="inputBox">
+            <form method="post" action="request.php">
+              <div class="inputBox valid">
                 <img src="images/name_icon.png"/>
-                <input type="name" name="formName" placeholder="Ваше имя"/>
+                <input type="name" name="formName"
+                  placeholder="Ваше имя" class="require" autocomplete="on"/>
               </div>
-              <div class="inputBox">
+              <div class="inputBox valid">
                 <img src="images/email_icon.png"/>
-                <input type="email" name="formEmail" placeholder="Email адрес"/>
+                <input type="email" name="formEmail"
+                  placeholder="Email адрес" class="require" autocomplete="on"/>
               </div>
-              <div class="inputBox last">
+              <div class="inputBox last valid">
                 <img src="images/phone_icon.png"/>
-                <input type="phone" name="formPhone" placeholder="Номер телефона"/>
+                <input type="phone" name="formPhone"
+                  placeholder="Номер телефона" class="require"
+                  autocomplete="on"/>
               </div>
               <input type="submit" value="Оставить заявку" class="button"/>
             </form>
@@ -303,14 +308,16 @@
 
       <!-- Форма подписки -->
       <div class="requestForm">
-        <form>
-          <div class="inputBox">
+        <form method="post" action="subscribe.php">
+          <div class="inputBox valid">
             <img src="images/name_icon.png"/>
-            <input type="name" name="formName" placeholder="Ваше имя"/>
+            <input type="name" name="formName" placeholder="Ваше имя"
+              class="require"/>
           </div>
-          <div class="inputBox last">
+          <div class="inputBox last valid">
             <img src="images/email_icon.png"/>
-            <input type="email" name="formEmail" placeholder="Email адрес"/>
+            <input type="email" name="formEmail" placeholder="Email адрес"
+              class="require"/>
           </div>
           <input type="submit" value="Подписаться" class="button"/>
         </form>
